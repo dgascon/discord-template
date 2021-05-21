@@ -10,6 +10,8 @@
   "author": "Mylhow#3800",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "glob": "^7.1.7",
+    "ms": "^2.1.3"
   }
 }

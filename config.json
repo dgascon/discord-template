@@ -1,4 +1,5 @@
 {
   "token": "INSERT_TOKEN_HERE",
-  "prefix" : "?"
+  "prefix" : "?",
+  "delete_time": 5000
 }

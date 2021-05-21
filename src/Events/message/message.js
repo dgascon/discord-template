@@ -18,7 +18,7 @@ module.exports = class extends Event {
 
 			const command = this.client.commands.get(cmd.toLowerCase()) || this.client.commands.get(this.client.aliases.get(cmd.toLowerCase()));
 
-			message.delete({timeout: 5000});
+			message.delete({timeout: this.client.delete_time});
 
 			if (command) {
 				command.run(message, args);

@@ -37,6 +37,9 @@ module.exports = class SClient extends Client {
 		if (!options.prefix) throw new Error('You must pass a prefix for the client.');
 		if (typeof options.prefix !== 'string') throw new TypeError('Prefix should be a type of String.');
 		this.prefix = options.prefix;
+
+		if (options.delete_time && typeof options.delete_time !== 'number') throw new TypeError('Delete_time should be a type of Integer.');
+		this.delete_time = (!options.delete_time) ? 5000 : options.delete_time;
 	}
 
 	/**
